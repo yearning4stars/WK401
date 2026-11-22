@@ -1,0 +1,15 @@
+{
+  "name": "student-library",
+  "version": "0.1.0",
+  "private": true,
+  "description": "คลังเนื้อหาสำหรับเรียนรายเรื่อง ม.4 สายวิทย์-คณิตขึ้นไป พร้อมดัชนีลิงก์ข้อสอบจริง",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "build": "node scripts/build-index.mjs",
+    "check": "node scripts/build-index.mjs --check",
+    "test": "node --test",
+    "dev": "node scripts/build-index.mjs && python3 -m http.server 8080"
+  },
+  "license": "MIT"
+}

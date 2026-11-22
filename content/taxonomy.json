@@ -1,0 +1,13 @@
+{
+  "levels": [
+    { "id": "m4", "name": "ม.4" },
+    { "id": "m5", "name": "ม.5" },
+    { "id": "m6", "name": "ม.6" }
+  ],
+  "subjects": [
+    { "id": "physics", "name": "ฟิสิกส์" },
+    { "id": "chemistry", "name": "เคมี" },
+    { "id": "biology", "name": "ชีววิทยา" },
+    { "id": "math", "name": "คณิตศาสตร์" }
+  ]
+}
