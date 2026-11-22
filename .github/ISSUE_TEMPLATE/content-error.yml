@@ -1,0 +1,26 @@
+name: แจ้งเนื้อหาผิด
+description: พบสูตร คำตอบ หรือคำอธิบายที่ผิดหรือสื่อความหมายคลาดเคลื่อน
+title: "[เนื้อหาผิด] "
+labels: ["content-error"]
+body:
+  - type: input
+    id: topic
+    attributes:
+      label: เรื่องที่พบ
+      description: ใส่ id ของเรื่อง เช่น m4/physics/constant-acceleration
+    validations:
+      required: true
+  - type: textarea
+    id: where
+    attributes:
+      label: ตำแหน่งและสิ่งที่ผิด
+      description: ระบุหัวข้อหรือข้อ และอธิบายว่าผิดอย่างไร
+    validations:
+      required: true
+  - type: textarea
+    id: correct
+    attributes:
+      label: สิ่งที่ถูกต้อง พร้อมเหตุผล
+      description: ถ้ามีวิธีคิดหรือแหล่งอ้างอิง ช่วยใส่มาด้วย
+    validations:
+      required: true
