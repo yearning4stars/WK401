@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" role="img" aria-labelledby="t d">
+<title id="t">แผนภาพวัตถุอิสระของกล่องมวล 5 กิโลกรัม</title>
+<desc id="d">กล่องมวล 5 กิโลกรัมบนพื้น มีแรงตั้งฉากขึ้น 50 นิวตัน น้ำหนักลง 50 นิวตัน แรงดึงไปทางขวา 30 นิวตัน และแรงเสียดทานไปทางซ้าย 10 นิวตัน แรงลัพธ์ 20 นิวตัน ความเร่ง 4 เมตรต่อวินาทีกำลังสอง</desc>
+<style>
+:root{--ink:#1f2430;--muted:#5b6472;--bg:#ffffff;--a:#1d5fd1;--b:#c2410c;--g:#15803d;--grid:#cfcac0;--fill:#dbe7fb;--fill2:#fde3d3}
+@media (prefers-color-scheme:dark){:root{--ink:#e8eaee;--muted:#a3acb9;--bg:#1b1f26;--a:#7aa8ff;--b:#ffa56b;--g:#6ee7a0;--grid:#3a424e;--fill:#243659;--fill2:#4a3326}}
+.bg{fill:var(--bg)}
+text{font:15px system-ui,"Sarabun","Noto Sans Thai","Leelawadee UI",Tahoma,sans-serif;fill:var(--ink)}
+.m{fill:var(--muted);font-size:13px}.bd{font-weight:700}.mid{text-anchor:middle}.end{text-anchor:end}
+.ta{fill:var(--a)}.tb{fill:var(--b)}.tg{fill:var(--g)}
+.sf{stroke:var(--muted);stroke-width:3;fill:none}
+.box{fill:var(--fill);stroke:var(--ink);stroke-width:2}
+.sa{stroke:var(--a);stroke-width:3;fill:none}.sb{stroke:var(--b);stroke-width:3;fill:none}
+.sg{stroke:var(--g);stroke-width:3;fill:none}.si{stroke:var(--ink);stroke-width:3;fill:none;stroke-dasharray:7 5}
+.fa{fill:var(--a)}.fb{fill:var(--b)}.fg{fill:var(--g)}.fi{fill:var(--ink)}
+</style>
+<defs>
+<marker id="ha" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0 0L10 5L0 10z" class="fa"/></marker>
+<marker id="hb" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0 0L10 5L0 10z" class="fb"/></marker>
+<marker id="hg" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0 0L10 5L0 10z" class="fg"/></marker>
+<marker id="hi" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0 0L10 5L0 10z" class="fi"/></marker>
+</defs>
+<rect class="bg" width="600" height="360" rx="12"/>
+
+<line class="sf" x1="130" y1="195" x2="470" y2="195"/>
+<rect class="box" x="260" y="145" width="80" height="50" rx="6"/>
+<text class="mid bd" x="300" y="176">5 kg</text>
+
+<line class="sa" x1="300" y1="145" x2="300" y2="47" marker-end="url(#ha)"/>
+<text class="ta" x="312" y="62">N = 50 N</text>
+<line class="sa" x1="300" y1="195" x2="300" y2="293" marker-end="url(#ha)"/>
+<text class="ta" x="312" y="285">W = mg = 50 N</text>
+
+<line class="sg" x1="340" y1="170" x2="400" y2="170" marker-end="url(#hg)"/>
+<text class="mid tg" x="388" y="156">F = 30 N</text>
+<line class="sb" x1="260" y1="170" x2="240" y2="170" marker-end="url(#hb)"/>
+<text class="end tb" x="232" y="175">f = 10 N</text>
+
+<line class="si" x1="410" y1="110" x2="480" y2="110" marker-end="url(#hi)"/>
+<text class="mid bd" x="445" y="98">a = 4 m/s²</text>
+
+<text class="mid bd" x="300" y="326">แนวนอน: ΣF = 30 − 10 = 20 N  →  a = 20 ÷ 5 = 4 m/s²</text>
+<text class="mid m" x="300" y="348">แนวตั้ง: N = W หักล้างกัน จึงไม่มีความเร่งในแนวตั้ง</text>
+</svg>

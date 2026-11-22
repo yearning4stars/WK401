@@ -12,7 +12,7 @@ const taxonomy = {
   subjects: [{ id: 'physics', name: 'ฟิสิกส์' }, { id: 'math', name: 'คณิตศาสตร์' }],
 };
 
-const topic = (overrides = {}, extra = '') => {
+const topic = (overrides = {}, extra = '', body = 'เนื้อหา') => {
   const base = {
     title: 'เรื่องทดสอบ',
     level: 'm4',
@@ -24,7 +24,7 @@ const topic = (overrides = {}, extra = '') => {
     ...overrides,
   };
   const lines = Object.entries(base).map(([k, v]) => `${k}: ${v}`);
-  return `---\n${lines.join('\n')}\n${extra}---\n\nเนื้อหา\n`;
+  return `---\n${lines.join('\n')}\n${extra}---\n\n${body}\n`;
 };
 
 /** สร้างโฟลเดอร์ content ชั่วคราวจากแผนที่ path -> เนื้อไฟล์ */
@@ -173,4 +173,41 @@ test('buildIndex: ฟิลด์ที่ไม่รู้จักเป็�
   const { errors, warnings } = await build({ 'm4/physics/x.md': topic({ hello: 'world' }) });
   assert.deepEqual(errors, []);
   assert.ok(has(warnings, 'ไม่รู้จักฟิลด์ "hello"'));
+});
+
+// ------------------------------------------------------------------ รูปภาพ
+
+test('buildIndex: รูปที่มีอยู่จริงผ่าน ส่วน alt ว่างเป็นแค่คำเตือน', async () => {
+  const { errors, warnings } = await build({
+    'm4/physics/x.md': topic({}, '', '![แผนภาพ](images/a.svg)\n\n![](images/a.svg)'),
+    'm4/physics/images/a.svg': '<svg xmlns="http://www.w3.org/2000/svg"/>',
+  });
+  assert.deepEqual(errors, []);
+  assert.ok(has(warnings, 'ควรใส่คำอธิบายภาพ'), warnings.join('\n'));
+});
+
+test('buildIndex: รูปหาย รูปจากเว็บอื่น รูปนอก content และไฟล์ที่ไม่ใช่ภาพ ต้องไม่ผ่าน', async () => {
+  const body = [
+    '![ก](images/missing.svg)',
+    '![ข](https://example.org/pic.png)',
+    '![ค](../../../outside.png)',
+    '![ง](images/notes.txt)',
+    '<img src="//cdn.example.org/x.png" alt="จ">',
+  ].join('\n\n');
+  const { errors } = await build({
+    'm4/physics/x.md': topic({}, '', body),
+    'm4/physics/images/notes.txt': 'x',
+  });
+  assert.ok(has(errors, 'images/missing.svg": ไม่พบไฟล์'), errors.join('\n'));
+  assert.ok(has(errors, 'https://example.org/pic.png": ต้องเป็นไฟล์ในโปรเจกต์'), errors.join('\n'));
+  assert.ok(has(errors, '../../../outside.png": ต้องอยู่ภายในโฟลเดอร์ content/'), errors.join('\n'));
+  assert.ok(has(errors, 'images/notes.txt": ต้องเป็นไฟล์ภาพ'), errors.join('\n'));
+  assert.ok(has(errors, '//cdn.example.org/x.png": ต้องเป็นไฟล์ในโปรเจกต์'), errors.join('\n'));
+});
+
+test('buildIndex: ข้อความรูปในโค้ดบล็อกไม่ถูกนับเป็นรูปจริง', async () => {
+  const { errors } = await build({
+    'm4/physics/x.md': topic({}, '', 'ตัวอย่าง `![alt](nope.png)` และ\n\n```\n![alt](nope2.png)\n```'),
+  });
+  assert.deepEqual(errors, []);
 });

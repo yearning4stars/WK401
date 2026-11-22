@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250" role="img" aria-labelledby="t d">
+<title id="t">ระยะทางกับการกระจัดบนเส้นตรง</title>
+<desc id="d">เดินจากตำแหน่ง 0 ไปทางขวา 6 เมตร แล้วย้อนกลับ 2 เมตร ระยะทางรวม 8 เมตร แต่การกระจัดคือ 4 เมตรไปทางขวา</desc>
+<style>
+:root{--ink:#1f2430;--muted:#5b6472;--bg:#ffffff;--a:#1d5fd1;--b:#c2410c;--g:#15803d;--grid:#cfcac0;--fill:#dbe7fb;--fill2:#fde3d3}
+@media (prefers-color-scheme:dark){:root{--ink:#e8eaee;--muted:#a3acb9;--bg:#1b1f26;--a:#7aa8ff;--b:#ffa56b;--g:#6ee7a0;--grid:#3a424e;--fill:#243659;--fill2:#4a3326}}
+.bg{fill:var(--bg)}
+text{font:15px system-ui,"Sarabun","Noto Sans Thai","Leelawadee UI",Tahoma,sans-serif;fill:var(--ink)}
+.m{fill:var(--muted);font-size:13px}.bd{font-weight:700}.mid{text-anchor:middle}.end{text-anchor:end}
+.ta{fill:var(--a)}.tb{fill:var(--b)}.tg{fill:var(--g)}
+.ax{stroke:var(--ink);stroke-width:1.6;fill:none}.tk{stroke:var(--ink);stroke-width:1.2}
+.gd{stroke:var(--grid);stroke-width:1.5;stroke-dasharray:5 4;fill:none}
+.sa{stroke:var(--a);stroke-width:3;fill:none}.sb{stroke:var(--b);stroke-width:3;fill:none}
+.fa{fill:var(--a)}.fb{fill:var(--b)}.dot{fill:var(--ink)}.dotb{fill:var(--b)}
+</style>
+<defs>
+<marker id="ha" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0 0L10 5L0 10z" class="fa"/></marker>
+<marker id="hb" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0 0L10 5L0 10z" class="fb"/></marker>
+</defs>
+<rect class="bg" width="600" height="250" rx="12"/>
+
+<line class="gd" x1="60" y1="55" x2="60" y2="170"/>
+<line class="gd" x1="340" y1="55" x2="340" y2="170"/>
+<line class="gd" x1="480" y1="110" x2="480" y2="170"/>
+
+<line class="sb" x1="60" y1="55" x2="340" y2="55" marker-end="url(#hb)"/>
+<text class="mid tb bd" x="200" y="40">การกระจัด = +4 m (ไปทางขวา)</text>
+
+<line class="sa" x1="60" y1="110" x2="480" y2="110" marker-end="url(#ha)"/>
+<text class="mid ta" x="270" y="100">ไป 6 m</text>
+<line class="sa" x1="480" y1="140" x2="340" y2="140" marker-end="url(#ha)"/>
+<text class="mid ta" x="410" y="132">กลับ 2 m</text>
+
+<line class="ax" x1="40" y1="170" x2="580" y2="170"/>
+<g class="tk">
+<line x1="60" y1="165" x2="60" y2="175"/><line x1="130" y1="165" x2="130" y2="175"/>
+<line x1="200" y1="165" x2="200" y2="175"/><line x1="270" y1="165" x2="270" y2="175"/>
+<line x1="340" y1="165" x2="340" y2="175"/><line x1="410" y1="165" x2="410" y2="175"/>
+<line x1="480" y1="165" x2="480" y2="175"/><line x1="550" y1="165" x2="550" y2="175"/>
+</g>
+<text class="mid" x="60" y="192">0</text><text class="mid" x="130" y="192">1</text>
+<text class="mid" x="200" y="192">2</text><text class="mid" x="270" y="192">3</text>
+<text class="mid" x="340" y="192">4</text><text class="mid" x="410" y="192">5</text>
+<text class="mid" x="480" y="192">6</text><text class="mid" x="550" y="192">7</text>
+<text class="m end" x="580" y="158">ตำแหน่ง x (m)</text>
+
+<circle class="dot" cx="60" cy="170" r="5"/>
+<circle class="dotb" cx="340" cy="170" r="5"/>
+<text class="m mid" x="60" y="210">เริ่ม</text>
+<text class="m mid" x="340" y="210">จบ</text>
+<text class="m mid" x="480" y="210">จุดกลับ</text>
+
+<text class="mid ta bd" x="300" y="238">ระยะทางรวม = 6 + 2 = 8 m</text>
+</svg>

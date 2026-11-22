@@ -129,7 +129,10 @@ a { color: var(--accent); text-underline-offset: 0.15em; }
 .prose table { border-collapse: collapse; margin: 1rem 0; }
 .prose th, .prose td { border: 1px solid var(--border); padding: 0.4rem 0.75rem; text-align: left; }
 .prose th { background: var(--soft); }
-.prose img { max-width: 100%; height: auto; }
+.prose img {
+  display: block; max-width: 100%; height: auto; margin: 1.1rem auto;
+  border: 1px solid var(--border); border-radius: 12px;
+}
 .prose details {
   margin: 0.75rem 0; border: 1px solid var(--border); border-radius: 8px; background: var(--card); padding: 0.1rem 1rem;
 }

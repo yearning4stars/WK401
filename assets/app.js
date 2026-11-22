@@ -271,6 +271,17 @@
         a.rel = 'noopener noreferrer';
       }
     });
+    // รูปในเนื้อหาอ้างพาธเทียบกับไฟล์ .md ต้องแปลงให้ชี้ถูกที่ และไม่โหลดรูปจากเว็บอื่น
+    const baseDir = `content/${topic.path.slice(0, topic.path.lastIndexOf('/') + 1)}`;
+    article.querySelectorAll('img').forEach((img) => {
+      const src = img.getAttribute('src') || '';
+      if (/^[a-z][a-z0-9+.-]*:/i.test(src) || src.startsWith('//')) {
+        img.replaceWith(document.createTextNode(img.getAttribute('alt') || ''));
+        return;
+      }
+      img.setAttribute('src', baseDir + src);
+      img.setAttribute('loading', 'lazy');
+    });
 
     main.replaceChildren(
       h('nav', { class: 'crumbs', 'aria-label': 'เส้นทาง' }, h('ol', null,

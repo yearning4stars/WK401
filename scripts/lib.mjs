@@ -1,6 +1,6 @@
 // ตัวอ่าน frontmatter และตัวตรวจเนื้อหา — ไม่ต้องติดตั้งแพ็กเกจเพิ่ม
-import { readdir, readFile, stat } from 'node:fs/promises';
-import { join, relative, extname, sep } from 'node:path';
+import { access, readdir, readFile, stat } from 'node:fs/promises';
+import { dirname, extname, isAbsolute, join, relative, resolve, sep } from 'node:path';
 
 /** ปีข้อสอบต้องเป็น พ.ศ. ในช่วงนี้ */
 export const YEAR_MIN = 2540;
@@ -219,6 +219,45 @@ export function validateTopic(data, { level, subject, taxonomy }) {
   return { errors, warnings };
 }
 
+// ---------------------------------------------------------------- ตรวจรูปภาพในเนื้อหา
+
+const IMG_MARKDOWN = /!\[([^\]]*)\]\(\s*<?([^)\s>]+)>?[^)]*\)/g;
+const IMG_HTML = /<img\b[^>]*?\bsrc\s*=\s*["']([^"']+)["']/gi;
+
+/** รูปต้องเป็นไฟล์ภาพที่อยู่ใน content/ เท่านั้น ไม่ลิงก์รูปจากเว็บอื่น (กันการส่งข้อมูลผู้เรียนออกนอกเว็บ) */
+async function checkImages(body, file, contentDir) {
+  const errors = [];
+  const warnings = [];
+  const text = body.replace(/```[\s\S]*?```|`[^`\n]*`/g, '');
+  const refs = [
+    ...[...text.matchAll(IMG_MARKDOWN)].map((m) => ({ alt: m[1], src: m[2] })),
+    ...[...text.matchAll(IMG_HTML)].map((m) => ({ alt: null, src: m[1] })),
+  ];
+  for (const { alt, src } of refs) {
+    if (/^[a-z][a-z0-9+.-]*:/i.test(src) || src.startsWith('//')) {
+      errors.push(`รูป "${src}": ต้องเป็นไฟล์ในโปรเจกต์ ไม่ใช่ลิงก์ภายนอก`);
+      continue;
+    }
+    if (alt !== null && alt.trim() === '') {
+      warnings.push(`รูป "${src}": ควรใส่คำอธิบายภาพ (alt) ในวงเล็บเหลี่ยม`);
+    }
+    let clean;
+    try { clean = decodeURIComponent(src.split(/[?#]/)[0]); } catch { clean = src; }
+    if (!IMAGE_EXT.has(extname(clean).toLowerCase())) {
+      errors.push(`รูป "${src}": ต้องเป็นไฟล์ภาพ (${[...IMAGE_EXT].join(', ')})`);
+      continue;
+    }
+    const target = resolve(dirname(file), clean);
+    const rel = relative(contentDir, target);
+    if (rel.startsWith('..') || isAbsolute(rel)) {
+      errors.push(`รูป "${src}": ต้องอยู่ภายในโฟลเดอร์ content/`);
+      continue;
+    }
+    try { await access(target); } catch { errors.push(`รูป "${src}": ไม่พบไฟล์`); }
+  }
+  return { errors, warnings };
+}
+
 // ---------------------------------------------------------------- สร้างดัชนี
 
 async function walk(dir) {
@@ -286,6 +325,10 @@ export async function buildIndex({ contentDir, taxonomy } = {}) {
     result.errors.forEach((m) => errors.push(`${rel}: ${m}`));
     result.warnings.forEach((m) => warnings.push(`${rel}: ${m}`));
     if (body.trim() === '') errors.push(`${rel}: ไม่มีเนื้อหาหลังบล็อก frontmatter`);
+    const images = await checkImages(body, file, contentDir);
+    images.errors.forEach((m) => errors.push(`${rel}: ${m}`));
+    images.warnings.forEach((m) => warnings.push(`${rel}: ${m}`));
+    if (images.errors.length) continue;
     if (result.errors.length) continue;
 
     const posKey = `${level}/${subject}/${data.chapter}/${data.order}`;

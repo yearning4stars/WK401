@@ -20,6 +20,7 @@
 content/
   taxonomy.json              รายการระดับชั้นและวิชา
   <ระดับ>/<วิชา>/<เรื่อง>.md   เนื้อหาแต่ละเรื่อง (m4/physics/newtons-laws.md)
+  <ระดับ>/<วิชา>/images/      ภาพประกอบ SVG ที่วาดเอง
 templates/topic.md           แม่แบบสำหรับเรื่องใหม่
 scripts/                     ตัวตรวจเนื้อหาและตัวสร้าง content/index.json
 assets/                      หน้าเว็บ (app.js, style.css, config.json)

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 340" role="img" aria-labelledby="t d">
+<title id="t">ขว้างลูกบอลขึ้นในแนวดิ่ง</title>
+<desc id="d">ขว้างขึ้นด้วยความเร็ว 20 เมตรต่อวินาที ที่เวลา 0, 1, 2, 3, 4 วินาที ความเร็วเป็น 20, 10, 0, ลบ 10, ลบ 20 เมตรต่อวินาที ตำแหน่งสูง 0, 15, 20, 15, 0 เมตร ความเร่งเท่ากันตลอดคือ 10 เมตรต่อวินาทีกำลังสองลงสู่พื้น</desc>
+<style>
+:root{--ink:#1f2430;--muted:#5b6472;--bg:#ffffff;--a:#1d5fd1;--b:#c2410c;--g:#15803d;--grid:#cfcac0;--fill:#dbe7fb;--fill2:#fde3d3}
+@media (prefers-color-scheme:dark){:root{--ink:#e8eaee;--muted:#a3acb9;--bg:#1b1f26;--a:#7aa8ff;--b:#ffa56b;--g:#6ee7a0;--grid:#3a424e;--fill:#243659;--fill2:#4a3326}}
+.bg{fill:var(--bg)}
+text{font:15px system-ui,"Sarabun","Noto Sans Thai","Leelawadee UI",Tahoma,sans-serif;fill:var(--ink)}
+.m{fill:var(--muted);font-size:13px}.bd{font-weight:700}.mid{text-anchor:middle}.end{text-anchor:end}
+.ta{fill:var(--a)}.tg{fill:var(--g)}
+.gd{stroke:var(--grid);stroke-width:2;stroke-dasharray:6 5;fill:none}
+.sa{stroke:var(--a);stroke-width:3;fill:none}.sg{stroke:var(--g);stroke-width:3;fill:none}
+.fa{fill:var(--a)}.fg{fill:var(--g)}.dot{fill:var(--ink)}
+</style>
+<defs>
+<marker id="ha" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0 0L10 5L0 10z" class="fa"/></marker>
+<marker id="hg" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0 0L10 5L0 10z" class="fg"/></marker>
+</defs>
+<rect class="bg" width="560" height="340" rx="12"/>
+
+<text class="mid ta bd" x="280" y="26">ความเร็วลดลง 10 m/s ทุกวินาที ทั้งขาขึ้นและขาลง</text>
+<text class="m mid" x="280" y="46">วาดแยกซ้าย–ขวาเพื่อให้เห็นขาขึ้นและขาลงชัด จริงๆ เคลื่อนที่ในแนวดิ่งเส้นเดียว</text>
+
+<line class="gd" x1="199" y1="270" x2="361" y2="270"/>
+
+<line class="sa" x1="190" y1="260" x2="190" y2="212" marker-end="url(#ha)"/>
+<line class="sa" x1="190" y1="140" x2="190" y2="117" marker-end="url(#ha)"/>
+<line class="sa" x1="370" y1="160" x2="370" y2="185" marker-end="url(#ha)"/>
+<line class="sa" x1="370" y1="280" x2="370" y2="328" marker-end="url(#ha)"/>
+<line class="sg" x1="280" y1="120" x2="280" y2="152" marker-end="url(#hg)"/>
+
+<circle class="dot" cx="190" cy="270" r="7"/>
+<circle class="dot" cx="190" cy="150" r="7"/>
+<circle class="dot" cx="280" cy="110" r="7"/>
+<circle class="dot" cx="370" cy="150" r="7"/>
+<circle class="dot" cx="370" cy="270" r="7"/>
+
+<text class="end" x="176" y="274">t = 0 s · 0 m</text>
+<text class="end" x="176" y="154">t = 1 s · 15 m</text>
+<text class="mid" x="280" y="88">t = 2 s · 20 m (สูงสุด)</text>
+<text x="384" y="154">t = 3 s · 15 m</text>
+<text x="384" y="274">t = 4 s · 0 m</text>
+
+<text class="ta" x="200" y="242">20 m/s</text>
+<text class="ta" x="200" y="132">10 m/s</text>
+<text class="ta bd" x="294" y="108">v = 0</text>
+<text class="ta end" x="362" y="177">10 m/s</text>
+<text class="ta end" x="362" y="308">20 m/s</text>
+
+<text class="tg bd" x="294" y="138">a = g ลง (ไม่ใช่ 0)</text>
+</svg>

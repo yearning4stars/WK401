@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 590 280" role="img" aria-labelledby="t d">
+<title id="t">กราฟความเร็ว–เวลาเมื่อความเร่งคงที่</title>
+<desc id="d">ความเร็วเพิ่มเป็นเส้นตรงจาก u เป็น v ในเวลา t พื้นที่ใต้กราฟแบ่งเป็นสี่เหลี่ยมเท่ากับ ut และสามเหลี่ยมเท่ากับครึ่งหนึ่งของ a คูณ t กำลังสอง รวมกันเป็นการกระจัด s</desc>
+<style>
+:root{--ink:#1f2430;--muted:#5b6472;--bg:#ffffff;--a:#1d5fd1;--b:#c2410c;--g:#15803d;--grid:#cfcac0;--fill:#dbe7fb;--fill2:#fde3d3}
+@media (prefers-color-scheme:dark){:root{--ink:#e8eaee;--muted:#a3acb9;--bg:#1b1f26;--a:#7aa8ff;--b:#ffa56b;--g:#6ee7a0;--grid:#3a424e;--fill:#243659;--fill2:#4a3326}}
+.bg{fill:var(--bg)}
+text{font:15px system-ui,"Sarabun","Noto Sans Thai","Leelawadee UI",Tahoma,sans-serif;fill:var(--ink)}
+.m{fill:var(--muted);font-size:13px}.bd{font-weight:700}.mid{text-anchor:middle}.end{text-anchor:end}
+.ta{fill:var(--a)}.tb{fill:var(--b)}
+.ax{stroke:var(--ink);stroke-width:1.6;fill:none}.tk{stroke:var(--ink);stroke-width:1.2}
+.gd{stroke:var(--grid);stroke-width:1.5;stroke-dasharray:5 4;fill:none}
+.sa{stroke:var(--a);stroke-width:3;fill:none}.sb{stroke:var(--b);stroke-width:2;fill:none}
+.r1{fill:var(--fill)}.r2{fill:var(--fill2)}
+</style>
+<rect class="bg" width="590" height="280" rx="12"/>
+
+<polygon class="r1" points="80,220 80,160 450,70 450,220"/>
+<polygon class="r2" points="80,160 450,70 450,160"/>
+<line class="gd" x1="80" y1="160" x2="450" y2="160"/>
+<line class="sa" x1="80" y1="160" x2="450" y2="70"/>
+<line class="gd" x1="450" y1="70" x2="450" y2="220"/>
+
+<line class="ax" x1="80" y1="220" x2="80" y2="45"/>
+<line class="ax" x1="80" y1="220" x2="535" y2="220"/>
+<text class="m" x="88" y="40">v (m/s)</text>
+<text class="m end" x="535" y="212">t (s)</text>
+<text class="end" x="70" y="165">u</text>
+<text class="end" x="70" y="75">v</text>
+<text class="mid" x="450" y="242">t</text>
+
+<text class="mid" x="265" y="196">สี่เหลี่ยม = ut</text>
+<text class="mid tb" x="350" y="140">สามเหลี่ยม = ½at²</text>
+<text class="m" x="130" y="122">ความชัน = a</text>
+
+<line class="sb" x1="462" y1="70" x2="462" y2="160"/>
+<line class="sb" x1="457" y1="70" x2="467" y2="70"/>
+<line class="sb" x1="457" y1="160" x2="467" y2="160"/>
+<text class="tb" x="472" y="120">v − u = at</text>
+
+<text class="mid ta bd" x="295" y="266">พื้นที่ทั้งหมด s = ut + ½at² = (u + v)t / 2</text>
+</svg>

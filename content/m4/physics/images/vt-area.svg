@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 270" role="img" aria-labelledby="t d">
+<title id="t">พื้นที่ใต้กราฟความเร็ว–เวลาเท่ากับการกระจัด</title>
+<desc id="d">ความเร็วคงที่ 4 เมตรต่อวินาทีเป็นเวลา 5 วินาที แล้วลดลงสม่ำเสมอจนเป็นศูนย์ในอีก 3 วินาที พื้นที่สี่เหลี่ยม 20 เมตร บวกสามเหลี่ยม 6 เมตร เท่ากับ 26 เมตร</desc>
+<style>
+:root{--ink:#1f2430;--muted:#5b6472;--bg:#ffffff;--a:#1d5fd1;--b:#c2410c;--g:#15803d;--grid:#cfcac0;--fill:#dbe7fb;--fill2:#fde3d3}
+@media (prefers-color-scheme:dark){:root{--ink:#e8eaee;--muted:#a3acb9;--bg:#1b1f26;--a:#7aa8ff;--b:#ffa56b;--g:#6ee7a0;--grid:#3a424e;--fill:#243659;--fill2:#4a3326}}
+.bg{fill:var(--bg)}
+text{font:15px system-ui,"Sarabun","Noto Sans Thai","Leelawadee UI",Tahoma,sans-serif;fill:var(--ink)}
+.m{fill:var(--muted);font-size:13px}.bd{font-weight:700}.mid{text-anchor:middle}.end{text-anchor:end}
+.ta{fill:var(--a)}.tb{fill:var(--b)}
+.ax{stroke:var(--ink);stroke-width:1.6;fill:none}.tk{stroke:var(--ink);stroke-width:1.2}
+.gd{stroke:var(--grid);stroke-width:1.5;stroke-dasharray:5 4;fill:none}
+.sa{stroke:var(--a);stroke-width:3;fill:none;stroke-linejoin:round}
+.r1{fill:var(--fill)}.r2{fill:var(--fill2)}
+</style>
+<rect class="bg" width="600" height="270" rx="12"/>
+
+<text class="mid ta bd" x="300" y="28">พื้นที่ใต้กราฟ = การกระจัด = 20 + 6 = 26 m</text>
+
+<rect class="r1" x="70" y="87" width="275" height="128"/>
+<polygon class="r2" points="345,215 345,87 510,215"/>
+<line class="gd" x1="345" y1="87" x2="345" y2="215"/>
+<polyline class="sa" points="70,87 345,87 510,215"/>
+
+<line class="ax" x1="70" y1="215" x2="70" y2="55"/>
+<line class="ax" x1="70" y1="215" x2="560" y2="215"/>
+<line class="tk" x1="345" y1="210" x2="345" y2="220"/>
+<line class="tk" x1="510" y1="210" x2="510" y2="220"/>
+<line class="tk" x1="65" y1="87" x2="75" y2="87"/>
+<text class="end" x="62" y="237">0</text>
+<text class="mid" x="345" y="237">5</text>
+<text class="mid" x="510" y="237">8</text>
+<text class="end" x="60" y="92">4</text>
+<text class="m" x="78" y="50">v (m/s)</text>
+<text class="m end" x="560" y="206">t (s)</text>
+
+<text class="mid" x="207" y="140">สี่เหลี่ยม</text>
+<text class="mid bd" x="207" y="162">4 × 5 = 20 m</text>
+<text class="mid tb" x="402" y="180">สามเหลี่ยม</text>
+<text class="mid tb bd" x="402" y="200">½ × 4 × 3 = 6 m</text>
+</svg>

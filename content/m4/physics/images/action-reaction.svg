@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 330" role="img" aria-labelledby="t d">
+<title id="t">คู่แรงกิริยา–ปฏิกิริยาของหนังสือวางบนโต๊ะ</title>
+<desc id="d">คู่ที่ 1 โลกดึงหนังสือลง และหนังสือดึงโลกขึ้น คู่ที่ 2 โต๊ะดันหนังสือขึ้น และหนังสือกดโต๊ะลง แรงที่โลกดึงหนังสือกับแรงที่โต๊ะดันหนังสือกระทำต่อหนังสือก้อนเดียวกัน จึงไม่ใช่คู่กิริยา–ปฏิกิริยา</desc>
+<style>
+:root{--ink:#1f2430;--muted:#5b6472;--bg:#ffffff;--a:#1d5fd1;--b:#c2410c;--g:#15803d;--grid:#cfcac0;--fill:#dbe7fb;--fill2:#fde3d3}
+@media (prefers-color-scheme:dark){:root{--ink:#e8eaee;--muted:#a3acb9;--bg:#1b1f26;--a:#7aa8ff;--b:#ffa56b;--g:#6ee7a0;--grid:#3a424e;--fill:#243659;--fill2:#4a3326}}
+.bg{fill:var(--bg)}
+text{font:15px system-ui,"Sarabun","Noto Sans Thai","Leelawadee UI",Tahoma,sans-serif;fill:var(--ink)}
+.m{fill:var(--muted);font-size:13px}.bd{font-weight:700}.mid{text-anchor:middle}
+.ta{fill:var(--a)}.tb{fill:var(--b)}
+.box{fill:var(--fill);stroke:var(--ink);stroke-width:2}
+.sa{stroke:var(--a);stroke-width:3;fill:none}.sb{stroke:var(--b);stroke-width:3;fill:none;stroke-dasharray:8 5}
+.fa{fill:var(--a)}.fb{fill:var(--b)}
+</style>
+<defs>
+<marker id="ha" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0 0L10 5L0 10z" class="fa"/></marker>
+<marker id="hb" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0 0L10 5L0 10z" class="fb"/></marker>
+</defs>
+<rect class="bg" width="600" height="330" rx="12"/>
+
+<text class="mid bd" x="300" y="30">สีและลายเส้นเดียวกัน = คู่กิริยา–ปฏิกิริยา (อยู่คนละวัตถุ)</text>
+
+<rect class="box" x="65" y="130" width="110" height="50" rx="8"/>
+<text class="mid bd" x="120" y="160">หนังสือ</text>
+<rect class="box" x="245" y="130" width="110" height="50" rx="8"/>
+<text class="mid bd" x="300" y="160">โต๊ะ</text>
+<rect class="box" x="425" y="130" width="110" height="50" rx="8"/>
+<text class="mid bd" x="480" y="160">โลก</text>
+
+<line class="sb" x1="120" y1="130" x2="120" y2="70" marker-end="url(#hb)"/>
+<text class="tb" x="130" y="102">N: โต๊ะดันหนังสือ</text>
+<line class="sa" x1="120" y1="180" x2="120" y2="240" marker-end="url(#ha)"/>
+<text class="ta" x="130" y="215">W: โลกดึงหนังสือ</text>
+
+<line class="sb" x1="300" y1="180" x2="300" y2="240" marker-end="url(#hb)"/>
+<text class="tb" x="310" y="215">หนังสือกดโต๊ะ</text>
+
+<line class="sa" x1="480" y1="130" x2="480" y2="70" marker-end="url(#ha)"/>
+<text class="ta" x="490" y="102">หนังสือดึงโลก</text>
+
+<line class="sa" x1="140" y1="283" x2="180" y2="283"/>
+<text class="ta" x="188" y="288">คู่ที่ 1: โลก ↔ หนังสือ</text>
+<line class="sb" x1="350" y1="283" x2="390" y2="283"/>
+<text class="tb" x="398" y="288">คู่ที่ 2: โต๊ะ ↔ หนังสือ</text>
+<text class="mid m" x="300" y="316">N กับ W อยู่บนหนังสือก้อนเดียวกัน จึงไม่ใช่คู่กิริยา–ปฏิกิริยา (แต่สมดุลกัน)</text>
+</svg>
