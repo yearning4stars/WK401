@@ -1,0 +1,94 @@
+{
+  "taxonomy": {
+    "levels": [
+      {
+        "id": "m4",
+        "name": "ม.4"
+      },
+      {
+        "id": "m5",
+        "name": "ม.5"
+      },
+      {
+        "id": "m6",
+        "name": "ม.6"
+      }
+    ],
+    "subjects": [
+      {
+        "id": "physics",
+        "name": "ฟิสิกส์"
+      },
+      {
+        "id": "chemistry",
+        "name": "เคมี"
+      },
+      {
+        "id": "biology",
+        "name": "ชีววิทยา"
+      },
+      {
+        "id": "math",
+        "name": "คณิตศาสตร์"
+      }
+    ]
+  },
+  "topics": [
+    {
+      "id": "m4/physics/displacement-velocity",
+      "path": "m4/physics/displacement-velocity.md",
+      "title": "การกระจัดและความเร็ว",
+      "level": "m4",
+      "subject": "physics",
+      "chapter": 1,
+      "chapterTitle": "การเคลื่อนที่แนวตรง",
+      "order": 1,
+      "summary": "แยกระยะทางกับการกระจัด อัตราเร็วกับความเร็ว และอ่านกราฟตำแหน่ง–เวลา กับกราฟความเร็ว–เวลา",
+      "status": "draft",
+      "tags": [
+        "การกระจัด",
+        "ความเร็ว",
+        "อัตราเร็ว",
+        "กราฟ"
+      ],
+      "exams": []
+    },
+    {
+      "id": "m4/physics/constant-acceleration",
+      "path": "m4/physics/constant-acceleration.md",
+      "title": "ความเร่งและการเคลื่อนที่ด้วยความเร่งคงที่",
+      "level": "m4",
+      "subject": "physics",
+      "chapter": 1,
+      "chapterTitle": "การเคลื่อนที่แนวตรง",
+      "order": 2,
+      "summary": "ใช้สมการการเคลื่อนที่ 4 ตัวกับโจทย์ความเร่งคงที่ รวมถึงการตกอิสระและการขว้างขึ้น",
+      "status": "draft",
+      "tags": [
+        "ความเร่ง",
+        "สมการการเคลื่อนที่",
+        "การตกอิสระ"
+      ],
+      "exams": []
+    },
+    {
+      "id": "m4/physics/newtons-laws",
+      "path": "m4/physics/newtons-laws.md",
+      "title": "กฎการเคลื่อนที่ของนิวตัน",
+      "level": "m4",
+      "subject": "physics",
+      "chapter": 2,
+      "chapterTitle": "แรงและกฎการเคลื่อนที่ของนิวตัน",
+      "order": 1,
+      "summary": "กฎของนิวตันทั้ง 3 ข้อ น้ำหนักและแรงตั้งฉาก และขั้นตอนแก้โจทย์ด้วยแผนภาพวัตถุอิสระ",
+      "status": "draft",
+      "tags": [
+        "แรง",
+        "นิวตัน",
+        "กฎการเคลื่อนที่",
+        "แรงลัพธ์"
+      ],
+      "exams": []
+    }
+  ]
+}
