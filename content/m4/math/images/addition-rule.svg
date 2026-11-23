@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 260" role="img" aria-labelledby="t d">
+<title id="t">กฎการบวกของความน่าจะเป็น</title>
+<desc id="d">ถ้า A กับ B ซ้อนกัน P(A∪B) เท่ากับ P(A) บวก P(B) ลบ P(A∩B) เพราะส่วนที่ซ้อนถูกนับสองครั้ง ถ้าไม่ซ้อนกัน P(A∪B) เท่ากับ P(A) บวก P(B)</desc>
+<style>
+:root{--ink:#1f2430;--muted:#5b6472;--bg:#ffffff;--a:#1d5fd1;--b:#c2410c;--g:#15803d;--grid:#cfcac0;--fill:#dbe7fb;--fill2:#fde3d3}
+@media (prefers-color-scheme:dark){:root{--ink:#e8eaee;--muted:#a3acb9;--bg:#1b1f26;--a:#7aa8ff;--b:#ffa56b;--g:#6ee7a0;--grid:#3a424e;--fill:#243659;--fill2:#4a3326}}
+.bg{fill:var(--bg)}
+text{font:15px system-ui,"Sarabun","Noto Sans Thai","Leelawadee UI",Tahoma,sans-serif;fill:var(--ink)}
+.m{fill:var(--muted);font-size:13px}.sm{font-size:12px;font-weight:700}.bd{font-weight:700}.mid{text-anchor:middle}
+.ta{fill:var(--a)}.tb{fill:var(--b)}
+.ol{fill:none;stroke:var(--ink);stroke-width:2}
+.al{fill:var(--a);fill-opacity:.3}
+.gd{stroke:var(--grid);stroke-width:1.5;stroke-dasharray:5 4;fill:none}
+</style>
+<rect class="bg" width="600" height="260" rx="12"/>
+<line class="gd" x1="300" y1="20" x2="300" y2="250"/>
+
+<text class="mid bd" x="150" y="28">A กับ B ซ้อนกัน</text>
+<circle class="al" cx="115" cy="120" r="55"/><circle class="al" cx="185" cy="120" r="55"/>
+<circle class="ol" cx="115" cy="120" r="55"/><circle class="ol" cx="185" cy="120" r="55"/>
+<text class="mid bd" x="88" y="125">A</text><text class="mid bd" x="212" y="125">B</text>
+<text class="mid sm" x="150" y="124">A∩B</text>
+<text class="mid ta bd" x="150" y="215">P(A∪B) = P(A) + P(B) − P(A∩B)</text>
+<text class="mid m" x="150" y="240">ส่วนที่ซ้อนถูกนับสองครั้ง จึงลบออกหนึ่งครั้ง</text>
+
+<text class="mid bd" x="450" y="28">A กับ B ไม่ซ้อนกัน (A ∩ B = ∅)</text>
+<circle class="al" cx="395" cy="120" r="45"/><circle class="al" cx="505" cy="120" r="45"/>
+<circle class="ol" cx="395" cy="120" r="45"/><circle class="ol" cx="505" cy="120" r="45"/>
+<text class="mid bd" x="395" y="125">A</text><text class="mid bd" x="505" y="125">B</text>
+<text class="mid ta bd" x="450" y="215">P(A∪B) = P(A) + P(B)</text>
+<text class="mid m" x="450" y="240">ไม่มีส่วนซ้อน บวกกันได้เลย</text>
+</svg>

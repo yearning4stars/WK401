@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 280" role="img" aria-labelledby="t d">
+<title id="t">แผนภาพเวนน์ของผลสำรวจนักเรียน 40 คน</title>
+<desc id="d">นักเรียน 40 คน ชอบคณิตศาสตร์เฉพาะอย่างเดียว 17 คน ชอบทั้งคณิตศาสตร์และวิทยาศาสตร์ 8 คน ชอบวิทยาศาสตร์เฉพาะอย่างเดียว 10 คน และไม่ชอบทั้งสองวิชา 5 คน</desc>
+<style>
+:root{--ink:#1f2430;--muted:#5b6472;--bg:#ffffff;--a:#1d5fd1;--b:#c2410c;--g:#15803d;--grid:#cfcac0;--fill:#dbe7fb;--fill2:#fde3d3}
+@media (prefers-color-scheme:dark){:root{--ink:#e8eaee;--muted:#a3acb9;--bg:#1b1f26;--a:#7aa8ff;--b:#ffa56b;--g:#6ee7a0;--grid:#3a424e;--fill:#243659;--fill2:#4a3326}}
+.bg{fill:var(--bg)}
+text{font:15px system-ui,"Sarabun","Noto Sans Thai","Leelawadee UI",Tahoma,sans-serif;fill:var(--ink)}
+.m{fill:var(--muted);font-size:13px}.bd{font-weight:700}.mid{text-anchor:middle}
+.ta{fill:var(--a)}.tb{fill:var(--b)}
+.num{font-size:24px;font-weight:700}
+.ol{fill:none;stroke:var(--ink);stroke-width:2}
+.ca{fill:var(--a);fill-opacity:.25}.cb{fill:var(--b);fill-opacity:.25}
+</style>
+<rect class="bg" width="560" height="280" rx="12"/>
+<rect class="ol" x="20" y="20" width="520" height="240" rx="10"/>
+
+<circle class="ca" cx="225" cy="140" r="85"/><circle class="cb" cx="335" cy="140" r="85"/>
+<circle class="ol" cx="225" cy="140" r="85"/><circle class="ol" cx="335" cy="140" r="85"/>
+
+<text class="mid ta bd" x="195" y="46">A: ชอบคณิต 25 คน</text>
+<text class="mid tb bd" x="365" y="46">B: ชอบวิทย์ 18 คน</text>
+
+<text class="mid num" x="195" y="150">17</text>
+<text class="mid num" x="280" y="150">8</text>
+<text class="mid num" x="365" y="150">10</text>
+<text class="mid num" x="485" y="150">5</text>
+<text class="mid m" x="195" y="172">เฉพาะคณิต</text>
+<text class="mid m" x="280" y="172">ทั้งสอง</text>
+<text class="mid m" x="365" y="172">เฉพาะวิทย์</text>
+<text class="mid m" x="485" y="172">ไม่ชอบเลย</text>
+
+<text class="mid bd" x="280" y="248">ทั้งหมด U = 40 คน  →  17 + 8 + 10 + 5 = 40</text>
+</svg>

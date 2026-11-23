@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 310" role="img" aria-labelledby="t d">
+<title id="t">แผนภาพเวนน์ของสับเซต</title>
+<desc id="d">เซต A ซึ่งมีสมาชิก 1 กับ 2 อยู่ภายในเซต B ที่มีสมาชิก 1, 2, 3, 4 และ B อยู่ภายในเอกภพสัมพัทธ์ U ที่มีสมาชิก 1 ถึง 6 จึงได้ว่า A เป็นสับเซตของ B และ B เป็นสับเซตของ U</desc>
+<style>
+:root{--ink:#1f2430;--muted:#5b6472;--bg:#ffffff;--a:#1d5fd1;--b:#c2410c;--g:#15803d;--grid:#cfcac0;--fill:#dbe7fb;--fill2:#fde3d3}
+@media (prefers-color-scheme:dark){:root{--ink:#e8eaee;--muted:#a3acb9;--bg:#1b1f26;--a:#7aa8ff;--b:#ffa56b;--g:#6ee7a0;--grid:#3a424e;--fill:#243659;--fill2:#4a3326}}
+.bg{fill:var(--bg)}
+text{font:16px system-ui,"Sarabun","Noto Sans Thai","Leelawadee UI",Tahoma,sans-serif;fill:var(--ink)}
+.m{fill:var(--muted);font-size:13px}.bd{font-weight:700}.mid{text-anchor:middle}
+.ta{fill:var(--a)}.tb{fill:var(--b)}
+.ol{fill:none;stroke:var(--ink);stroke-width:2}
+.f1{fill:var(--fill)}.f2{fill:var(--fill2)}
+</style>
+<rect class="bg" width="560" height="310" rx="12"/>
+<rect class="ol" x="20" y="20" width="520" height="240" rx="10"/>
+<text class="bd" x="34" y="46">U</text>
+
+<circle class="ol f1" cx="270" cy="145" r="100"/>
+<text class="bd ta" x="215" y="92">B</text>
+<circle class="ol f2" cx="270" cy="160" r="50"/>
+<text class="bd tb mid" x="270" y="140">A</text>
+
+<text class="mid" x="252" y="172">1</text>
+<text class="mid" x="288" y="172">2</text>
+<text class="mid" x="200" y="140">3</text>
+<text class="mid" x="340" y="140">4</text>
+<text class="mid" x="450" y="100">5</text>
+<text class="mid" x="450" y="210">6</text>
+
+<text class="mid ta bd" x="280" y="284">A ⊂ B ⊂ U</text>
+<text class="mid m" x="280" y="303">A = {1, 2}   B = {1, 2, 3, 4}   U = {1, 2, 3, 4, 5, 6}</text>
+</svg>

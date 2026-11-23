@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 262" role="img" aria-labelledby="t d">
+<title id="t">จัดหมู่กับเรียงสับเปลี่ยน</title>
+<desc id="d">เลือก 2 ตัวจาก A, B, C แบบไม่สนลำดับได้ 3 แบบ คือ AB, AC, BC แต่ละแบบเรียงลำดับได้ 2 วิธี รวมเป็นแบบสนลำดับ 6 แบบ</desc>
+<style>
+:root{--ink:#1f2430;--muted:#5b6472;--bg:#ffffff;--a:#1d5fd1;--b:#c2410c;--g:#15803d;--grid:#cfcac0;--fill:#dbe7fb;--fill2:#fde3d3}
+@media (prefers-color-scheme:dark){:root{--ink:#e8eaee;--muted:#a3acb9;--bg:#1b1f26;--a:#7aa8ff;--b:#ffa56b;--g:#6ee7a0;--grid:#3a424e;--fill:#243659;--fill2:#4a3326}}
+.bg{fill:var(--bg)}
+text{font:15px system-ui,"Sarabun","Noto Sans Thai","Leelawadee UI",Tahoma,sans-serif;fill:var(--ink)}
+.m{fill:var(--muted);font-size:13px}.bd{font-weight:700}.mid{text-anchor:middle}
+.ta{fill:var(--a)}.tb{fill:var(--b)}
+.ol{fill:none;stroke:var(--ink);stroke-width:2}
+.f1{fill:var(--fill)}.f2{fill:var(--fill2)}
+.ln{stroke:var(--muted);stroke-width:2;fill:none}
+</style>
+<rect class="bg" width="600" height="262" rx="12"/>
+<text class="mid bd" x="300" y="24">เลือก 2 ตัวจาก A, B, C</text>
+
+<g>
+<rect class="ol f1" x="50" y="40" width="120" height="36" rx="8"/><text class="mid bd ta" x="110" y="64">{A, B}</text>
+<rect class="ol f1" x="240" y="40" width="120" height="36" rx="8"/><text class="mid bd ta" x="300" y="64">{A, C}</text>
+<rect class="ol f1" x="430" y="40" width="120" height="36" rx="8"/><text class="mid bd ta" x="490" y="64">{B, C}</text>
+</g>
+<text class="mid m" x="110" y="94">นับเป็น 1 แบบ</text>
+<text class="mid m" x="300" y="94">นับเป็น 1 แบบ</text>
+<text class="mid m" x="490" y="94">นับเป็น 1 แบบ</text>
+
+<g class="ln">
+<line x1="110" y1="102" x2="76" y2="130"/><line x1="110" y1="102" x2="144" y2="130"/>
+<line x1="300" y1="102" x2="266" y2="130"/><line x1="300" y1="102" x2="334" y2="130"/>
+<line x1="490" y1="102" x2="456" y2="130"/><line x1="490" y1="102" x2="524" y2="130"/>
+</g>
+
+<g>
+<rect class="ol f2" x="48" y="130" width="56" height="32" rx="6"/><text class="mid bd tb" x="76" y="152">AB</text>
+<rect class="ol f2" x="116" y="130" width="56" height="32" rx="6"/><text class="mid bd tb" x="144" y="152">BA</text>
+<rect class="ol f2" x="238" y="130" width="56" height="32" rx="6"/><text class="mid bd tb" x="266" y="152">AC</text>
+<rect class="ol f2" x="306" y="130" width="56" height="32" rx="6"/><text class="mid bd tb" x="334" y="152">CA</text>
+<rect class="ol f2" x="428" y="130" width="56" height="32" rx="6"/><text class="mid bd tb" x="456" y="152">BC</text>
+<rect class="ol f2" x="496" y="130" width="56" height="32" rx="6"/><text class="mid bd tb" x="524" y="152">CB</text>
+</g>
+<text class="mid m" x="110" y="182">AB กับ BA ต่างกัน</text>
+<text class="mid m" x="300" y="182">AC กับ CA ต่างกัน</text>
+<text class="mid m" x="490" y="182">BC กับ CB ต่างกัน</text>
+
+<text class="mid ta bd" x="300" y="218">จัดหมู่ C(3,2) = 3 แบบ  ×  เรียงลำดับ 2! = 2 แบบ</text>
+<text class="mid tb bd" x="300" y="244">= เรียงสับเปลี่ยน P(3,2) = 6 แบบ</text>
+</svg>

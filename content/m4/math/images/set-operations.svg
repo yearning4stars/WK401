@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 370" role="img" aria-labelledby="t d">
+<title id="t">การดำเนินการระหว่างเซตด้วยแผนภาพเวนน์</title>
+<desc id="d">สี่แผนภาพแสดงส่วนที่แรเงา ได้แก่ A ยูเนียน B คือส่วนที่อยู่ใน A หรือ B, A อินเตอร์เซกชัน B คือส่วนที่ซ้อนกัน, A ลบ B คือส่วนของ A ที่ไม่อยู่ใน B, และคอมพลีเมนต์ของ A คือส่วนทั้งหมดใน U ที่ไม่อยู่ใน A</desc>
+<style>
+:root{--ink:#1f2430;--muted:#5b6472;--bg:#ffffff;--a:#1d5fd1;--b:#c2410c;--g:#15803d;--grid:#cfcac0;--fill:#dbe7fb;--fill2:#fde3d3;--sel:#9dbdf2}
+@media (prefers-color-scheme:dark){:root{--ink:#e8eaee;--muted:#a3acb9;--bg:#1b1f26;--a:#7aa8ff;--b:#ffa56b;--g:#6ee7a0;--grid:#3a424e;--fill:#243659;--fill2:#4a3326;--sel:#3f64a8}}
+.bg{fill:var(--bg)}
+text{font:15px system-ui,"Sarabun","Noto Sans Thai","Leelawadee UI",Tahoma,sans-serif;fill:var(--ink)}
+.m{fill:var(--muted);font-size:13px}.bd{font-weight:700}.mid{text-anchor:middle}
+.ta{fill:var(--a)}
+.ol{fill:none;stroke:var(--ink);stroke-width:2}
+.sh{fill:var(--sel)}.cv{fill:var(--bg)}
+</style>
+<defs><clipPath id="cb"><circle cx="165" cy="100" r="40"/></clipPath></defs>
+<rect class="bg" width="600" height="370" rx="12"/>
+
+<g transform="translate(10,10)">
+<text class="mid bd ta" x="135" y="14">A ∪ B</text>
+<text class="mid m" x="135" y="31">อยู่ใน A หรือ B (หรือทั้งสอง)</text>
+<rect class="ol" x="0" y="38" width="270" height="124" rx="8"/>
+<circle class="sh" cx="105" cy="100" r="40"/><circle class="sh" cx="165" cy="100" r="40"/>
+<circle class="ol" cx="105" cy="100" r="40"/><circle class="ol" cx="165" cy="100" r="40"/>
+<text class="m" x="10" y="56">U</text>
+<text class="mid bd" x="88" y="105">A</text><text class="mid bd" x="182" y="105">B</text>
+</g>
+
+<g transform="translate(310,10)">
+<text class="mid bd ta" x="135" y="14">A ∩ B</text>
+<text class="mid m" x="135" y="31">อยู่ทั้งใน A และ B</text>
+<rect class="ol" x="0" y="38" width="270" height="124" rx="8"/>
+<circle class="sh" cx="105" cy="100" r="40" clip-path="url(#cb)"/>
+<circle class="ol" cx="105" cy="100" r="40"/><circle class="ol" cx="165" cy="100" r="40"/>
+<text class="m" x="10" y="56">U</text>
+<text class="mid bd" x="88" y="105">A</text><text class="mid bd" x="182" y="105">B</text>
+</g>
+
+<g transform="translate(10,190)">
+<text class="mid bd ta" x="135" y="14">A − B</text>
+<text class="mid m" x="135" y="31">อยู่ใน A แต่ไม่อยู่ใน B</text>
+<rect class="ol" x="0" y="38" width="270" height="124" rx="8"/>
+<circle class="sh" cx="105" cy="100" r="40"/><circle class="cv" cx="165" cy="100" r="40"/>
+<circle class="ol" cx="105" cy="100" r="40"/><circle class="ol" cx="165" cy="100" r="40"/>
+<text class="m" x="10" y="56">U</text>
+<text class="mid bd" x="88" y="105">A</text><text class="mid bd" x="182" y="105">B</text>
+</g>
+
+<g transform="translate(310,190)">
+<text class="mid bd ta" x="135" y="14">A′</text>
+<text class="mid m" x="135" y="31">อยู่ใน U แต่ไม่อยู่ใน A</text>
+<rect class="sh" x="0" y="38" width="270" height="124" rx="8"/>
+<circle class="cv" cx="135" cy="100" r="40"/>
+<rect class="ol" x="0" y="38" width="270" height="124" rx="8"/>
+<circle class="ol" cx="135" cy="100" r="40"/>
+<text class="m" x="10" y="56">U</text>
+<text class="mid bd" x="135" y="105">A</text>
+</g>
+</svg>

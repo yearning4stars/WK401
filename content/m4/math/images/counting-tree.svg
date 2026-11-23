@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 300" role="img" aria-labelledby="t d">
+<title id="t">แผนภาพต้นไม้ของการเลือกเสื้อและกางเกง</title>
+<desc id="d">เลือกเสื้อได้ 2 แบบคือขาวหรือฟ้า แต่ละแบบเลือกกางเกงได้ 3 แบบคือดำ กรม เทา รวมเป็น 2 คูณ 3 เท่ากับ 6 แบบ</desc>
+<style>
+:root{--ink:#1f2430;--muted:#5b6472;--bg:#ffffff;--a:#1d5fd1;--b:#c2410c;--g:#15803d;--grid:#cfcac0;--fill:#dbe7fb;--fill2:#fde3d3}
+@media (prefers-color-scheme:dark){:root{--ink:#e8eaee;--muted:#a3acb9;--bg:#1b1f26;--a:#7aa8ff;--b:#ffa56b;--g:#6ee7a0;--grid:#3a424e;--fill:#243659;--fill2:#4a3326}}
+.bg{fill:var(--bg)}
+text{font:15px system-ui,"Sarabun","Noto Sans Thai","Leelawadee UI",Tahoma,sans-serif;fill:var(--ink)}
+.m{fill:var(--muted);font-size:13px}.bd{font-weight:700}.mid{text-anchor:middle}
+.ta{fill:var(--a)}.tb{fill:var(--b)}
+.ln{stroke:var(--muted);stroke-width:2;fill:none}
+.n0{fill:var(--ink)}.n1{fill:var(--a)}.n2{fill:var(--b)}
+</style>
+<rect class="bg" width="560" height="300" rx="12"/>
+
+<text class="mid tb bd" x="200" y="20">เลือกเสื้อ 2 แบบ</text>
+<text class="mid tb bd" x="380" y="20">เลือกกางเกง 3 แบบ</text>
+
+<g class="ln">
+<line x1="50" y1="150" x2="200" y2="80"/><line x1="50" y1="150" x2="200" y2="220"/>
+<line x1="200" y1="80" x2="380" y2="35"/><line x1="200" y1="80" x2="380" y2="80"/><line x1="200" y1="80" x2="380" y2="125"/>
+<line x1="200" y1="220" x2="380" y2="175"/><line x1="200" y1="220" x2="380" y2="220"/><line x1="200" y1="220" x2="380" y2="265"/>
+</g>
+
+<circle class="n0" cx="50" cy="150" r="6"/>
+<circle class="n1" cx="200" cy="80" r="6"/><circle class="n1" cx="200" cy="220" r="6"/>
+<g class="n2">
+<circle cx="380" cy="35" r="5"/><circle cx="380" cy="80" r="5"/><circle cx="380" cy="125" r="5"/>
+<circle cx="380" cy="175" r="5"/><circle cx="380" cy="220" r="5"/><circle cx="380" cy="265" r="5"/>
+</g>
+
+<text class="mid" x="200" y="62">เสื้อขาว</text>
+<text class="mid" x="200" y="206">เสื้อฟ้า</text>
+
+<text x="394" y="40">(ขาว, ดำ)</text><text x="394" y="85">(ขาว, กรม)</text><text x="394" y="130">(ขาว, เทา)</text>
+<text x="394" y="180">(ฟ้า, ดำ)</text><text x="394" y="225">(ฟ้า, กรม)</text><text x="394" y="270">(ฟ้า, เทา)</text>
+
+<text class="mid ta bd" x="300" y="292">รวม 2 × 3 = 6 แบบ (กฎการคูณ)</text>
+</svg>
