@@ -1,4 +1,4 @@
-name: เผยแพร่ GitHub Pages
+name: Deploy Pages
 
 on:
   push:
@@ -27,7 +27,7 @@ jobs:
           node-version: 22
       - run: npm test
       - run: npm run build
-      - name: รวมไฟล์เว็บ
+      - name: Assemble site
         run: |
           mkdir _site
           cp index.html _site/
